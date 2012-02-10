@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title">GraphCCActivity</string>
+    <string name="app_name">GraphCPUcheck</string>
+    
+    <string name="CtrlLabel1">FPS</string>
+    <string name="CtrlLabel2">Unlimited</string>
+
+</resources>

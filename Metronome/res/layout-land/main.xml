@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Title"
+        style="@+style/Metro.title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Title" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/measParent"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/measParent" >
+
+            <FrameLayout
+                android:id="@+id/bpmParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/radMeasure"
+                android:background="#ff0000" android:layout_above="@+id/metroParent" android:layout_alignParentTop="true">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/volParent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignTop="@+id/radMeasure"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/bpmParent"
+                android:background="#00ff00" android:layout_alignParentTop="true" android:layout_above="@+id/metroParent" android:layout_marginRight="10dip">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/metroParent"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:background="#0000ff" android:layout_above="@+id/controlParent" android:layout_marginRight="10dip">
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/controlParent"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#ff00ff" android:layout_alignParentBottom="true" android:layout_marginLeft="10dip" android:layout_marginRight="10dip">
+
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

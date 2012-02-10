@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GCC" parent="@android:Theme.NoTitleBar">
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">#f0f0f0f0</item>
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="GCC.Title">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ff0000ff</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
